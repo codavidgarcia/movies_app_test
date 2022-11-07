@@ -2,6 +2,7 @@ import React from 'react';
 import {useEffect, useState} from 'react';
 
 import './App.css';
+import './header.css';
 import SearchIcon from "./search.svg";
 import MovieCard from "./MovieCard.jsx";
 
