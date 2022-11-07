@@ -4,6 +4,7 @@ import {useEffect, useState} from 'react';
 import './App.css';
 import SearchIcon from "./search.svg";
 import MovieCard from "./MovieCard.jsx";
+import header from './header';
 
 const API_URL = 'https://www.omdbapi.com/?i=tt3896198&apikey=51c868f5';
 const App = () => {
@@ -24,8 +25,14 @@ const App = () => {
         searchMovies('Avengers');
     }, []);
 
-    return (
+    return (       
         <div className = "app">
+            <div className = "header">
+                <h1>David Garcia, @codavidgarcia</h1>
+                <p>Movie Search</p>
+            </div>
+            
+            
             <h1>Search movies simple App</h1>
             <p>by @Codavidgarcia</p>
             <h2>Use the search bar above to find a selection of movies of your preference</h2>

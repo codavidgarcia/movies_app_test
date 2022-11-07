@@ -1,26 +1,37 @@
+.header h1 {
+  font-size: 1.5rem;
+  color: rgb(151, 51, 51);
+  font-weight: 700;
+  margin: 0;
+} 
+
 .header {
     /* set the header full width and sticky */
     position: sticky;
     top: 0;
+    /* set the header background color */
     width: 100%;
     /* set the header background color */
-    background-color: #f0f0f0;
+    background-color: #ffffff;
+     /* set the font color to white */
+    color: rgb(54, 5, 5); 
     /* set the header height */
-    height: 60px;
     /* set the header display to flex */
     display: flex;
     /* set the header align-items to center */
     align-items: center;
     /* set the header justify-content to space-between */
     justify-content: space-between;
-    /* set the header padding */
-    padding: 0 20px;
+    /* set the padding between elements inside header */
+    padding: 0 1rem;
     /* set the header box-shadow */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* set the header z-index */
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%);
+    /* vertically centered elements inside header */
+    line-height: 3rem;
+
     z-index: 1;
+    padding: 1% 10% 1% 10%;
+    margin-bottom: 2rem;
   }
-  .header img {
-    width: 100px;
-    height: 13px;
-  }
+
+ 
