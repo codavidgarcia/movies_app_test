@@ -1,37 +1,43 @@
-.header h1 {
+import
+
+footer h1 {
   font-size: 1.5rem;
-  color: rgb(151, 51, 51);
+  color: rgb(255, 255, 255);
   font-weight: 700;
   margin: 0;
 } 
 
-.header {
-    /* set the header full width and sticky */
-    position: sticky;
+.footer {
+    background-image: url( 'background.svg' );
+    /* add this a linear gradient to background.svg:   */
+    
+    Background-size: cover;
+    
+
+
+
+    margin-top: -1rem;
+    min-height: 40vh;
     top: 0;
     /* set the header background color */
     width: 100%;
     /* set the header background color */
-    background-color: #ffffff;
+
      /* set the font color to white */
-    color: rgb(54, 5, 5); 
+    color: rgb(255, 255, 255); 
     /* set the header height */
     /* set the header display to flex */
     display: flex;
-    /* set the header align-items to center */
-    align-items: center;
+    /* set the footer align items 1/3 to the floor */
+    align-items: flex-end;
     /* set the header justify-content to space-between */
     justify-content: space-between;
     /* set the padding between elements inside header */
     padding: 0 1rem;
     /* set the header box-shadow */
-    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%);
+    /* box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%); */
     /* vertically centered elements inside header */
     line-height: 3rem;
-
-    z-index: 3;
-    padding: 1% 10% 1% 10%;
-    margin-bottom: 2rem;
+    padding: 0% 10% 4% 10%;
+    overflow: visible;
   }
-
- 

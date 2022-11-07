@@ -3,6 +3,7 @@ import {useEffect, useState} from 'react';
 
 import './App.css';
 import './header.css';
+import './footer.css';
 import SearchIcon from "./search.svg";
 import MovieCard from "./MovieCard.jsx";
 
@@ -71,7 +72,12 @@ const App = () => {
                     </div>
                 )
             }
+            <div className = "footer background">
+                <p>© {new Date().getFullYear()} David Garcia</p>
+                <p>Movie Search</p>
+            </div>
         </div>
+
     );
 }
 export default App;
