@@ -4,20 +4,8 @@ import {useEffect, useState} from 'react';
 import './App.css';
 import SearchIcon from "./search.svg";
 import MovieCard from "./MovieCard.jsx";
-import Header from './header.jsx';
-
 
 const API_URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=51c868f5';
-
-const movie = {
-     Title: 'The Avengers', 
-     Year: '2012', 
-     imdbID: 'tt0848228', 
-     Type: 'movie', 
-     Poster: 'N/A'
-    }
-    
-
 const App = () => {
     const [movies, setMovies] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
