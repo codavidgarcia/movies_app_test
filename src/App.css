@@ -1,6 +1,39 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 
+body,
+body[data-theme="light"] {
+  --color-text-primary: #313131;
+  --color-h1-text: rgb(161, 26, 26);
+  --color-text-secondary: #076963;
+  --color-bg-primary: #fff;
+  --color-bg-toggle: #1E90FF; 
+  font-family: var(--font-roboto);
+
+}
+
+body[data-theme="dark"] {
+  --color-text-primary: #e3e3e3;
+  --color-h1-text: #fff;
+  --color-text-secondary: #ff6b00;
+  --color-bg-primary: #15232d;
+  --color-bg-toggle: #a9a9a9; 
+    font-family: var(--font-roboto);
+
+}
+
+/* set white h1 color for light data-theme */
+body[data-theme="light"] h1 {
+  color: #fff!important;
+}
+
+body {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: sans-serif;
+}
+
+
 * {
   margin: 0;
   border: 0;
@@ -18,11 +51,6 @@
   --font-lato: "Lato", sans-serif;
 }
 
-body {
-  font-family: var(--font-roboto);
-  background-color: #ffffff;
-}
-
 .app {
   display: flex;
   justify-content: center;
@@ -33,7 +61,7 @@ body {
 h1 {
   font-size: 3rem;
   letter-spacing: 0.9px;
-  background: rgb(31, 31, 31);
+  background: var(--color-text-primary);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

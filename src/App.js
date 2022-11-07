@@ -6,6 +6,7 @@ import './header.css';
 import './footer.css';
 import SearchIcon from "./search.svg";
 import MovieCard from "./MovieCard.jsx";
+import ThemeToggle from "./ThemeToggle.js";
 
 const API_URL = 'https://www.omdbapi.com/?i=tt3896198&apikey=51c868f5';
 const App = () => {
@@ -28,12 +29,19 @@ const App = () => {
 
     return (       
         <div className = "app">
+            
             <div className = "header">
-                <h1>David Garcia, @codavidgarcia</h1>
-                <p>Movie Search</p>
+                <ul>
+                    <h1>David Garcia, @codavidgarcia</h1>
+                 </ul>
+                 <ul>
+                     <p>Movie Search</p>
+                 </ul>
+                 <ul>
+                    <ThemeToggle />
+                 </ul>
+                
             </div>
-            
-            
             <h1>Search movies simple App</h1>
             <p>by @Codavidgarcia</p>
             <h2>Use the search bar above to find a selection of movies of your preference</h2>
